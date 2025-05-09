@@ -1,0 +1,56 @@
+﻿@page 
+@model TodoModel
+@{
+}
+
+<div class="container mt-5"> 
+<div class="text-center mb-4">
+
+	<h2 class="text-primary fw-blod">My To-Do List</h2>
+
+	<form method="post" class="d-flex justify-content-center gap-2 mt-3">
+
+		<input asp-for="NewTodo.Title" placeholder="Enter task..." />
+		<button type="submit">Add</button>
+
+	</form>
+
+</div>
+
+<table class="table table-bordered table-hover shadow-sm">
+	<thead class="table-dark text-center">
+		<tr>
+			<th>Task</th>
+			<th>Status</th>
+			<th>Toggle</th>
+		</tr>
+	</thead>
+	<tbody class="align-middle text-center">
+		@foreach (var item in Model.Todos)
+		{
+			<tr>
+				<td>@item.Title</td>
+				<td>
+					@if (item.IsDone)
+					{
+						<span class="text-success fw-bold">✔ Done</span>
+					}
+					else
+					{
+						<span class="text-danger fw-bold">❌ Not Done</span>
+					}
+				</td>
+				<td>
+					<form method="post" asp-page-handler="Toggle">
+						<input type="hidden" name="id" value="@item.Id" />
+						<input type="checkbox" name="isDone" value="true" 
+							@(item.IsDone ? "checked" : "") 
+							onchange="this.form.submit()" />
+					</form>
+				</td>
+			</tr>
+		}
+	</tbody>
+</div>
+</table>
+
