@@ -24,7 +24,7 @@ This is a simple and clean to-do list web application built with ASP.NET Core Ra
    git clone https://github.com/yourusername/todo-razor-app.git
    cd todo-razor-app
    ```
-
+   
 2. Make sure you have installed:
    - .NET 6 SDK or later
    - Visual Studio or VS Code
