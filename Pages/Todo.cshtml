@@ -11,7 +11,7 @@
 	<form method="post" class="d-flex justify-content-center gap-2 mt-3">
 
 		<input asp-for="NewTodo.Title" placeholder="Enter task..." />
-		<button type="submit">Add</button>
+		<button type="submit" class="btn btn-success">Add</button>
 
 	</form>
 
@@ -23,6 +23,7 @@
 			<th>Task</th>
 			<th>Status</th>
 			<th>Toggle</th>
+			<th>Remove</th>
 		</tr>
 	</thead>
 	<tbody class="align-middle text-center">
@@ -48,9 +49,22 @@
 							onchange="this.form.submit()" />
 					</form>
 				</td>
+				<td>
+					<form method="post" asp-page-handler="Delete">
+						<input type="hidden" name="id" value="@item.Id" />
+						<button type="submit" class="btn btn-sm btn-outline-danger">
+								🗑 Remove
+						</button>
+					</form>
+				</td>
 			</tr>
 		}
 	</tbody>
-</div>
 </table>
+
+<form method="post" asp-page-handler="ClearAll" class="text-center mb-4">
+		<button type="submit" class="btn btn-danger">🧹 Clear All Tasks</button>
+</form>
+
+</div>
 

@@ -46,6 +46,26 @@ namespace TodoListApp.Pages
 
             return RedirectToPage();
         }
+
+        public async Task<IActionResult> OnPostDeleteAsync(int id)
+        {
+            var todo = await _context.Todos.FindAsync(id);
+            if (todo != null)
+            {
+                _context.Todos.Remove(todo);
+                await _context.SaveChangesAsync();
+            }
+
+            return RedirectToPage();
+        }
+
+        public async Task<IActionResult> OnPostClearAllAsync()
+        {
+            _context.Todos.RemoveRange(_context.Todos);
+            await _context.SaveChangesAsync();
+
+            return RedirectToPage();
+        }
  
 }
 }
