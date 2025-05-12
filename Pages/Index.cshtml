@@ -4,13 +4,33 @@
     ViewData["Title"] = "Home page";
 }
 
-<div class="d-flex justify-content-center align-items-center" style="min-height: 70vh;">
-    <div class="text-center">
-        <h1 class="display-4">Welcome</h1>
-        <h3 class="display-6">Stay Organized with your Personal To-Do List</h3>
-        <p>Track tasks, mark them complete, and stay productive every day.</p>
+<div class="container">
+    <div class="row justify-content-center align-items-center">
+        <div class="col-md-8 text-center">
+            <h1 class="display-4">Welcome</h1>
+            <h3 class="display-6">Stay Organized with your Personal To-Do List</h3>
+            <p>Track tasks, mark them complete, and stay productive every day.</p>
 
-        <a asp-page="/Todo" class="btn btn-success btn-lg mt-3">View My Tasks</a>
+            <a asp-page="/Todo" class="btn btn-success btn-lg mt-3">View My Tasks</a>
+
+            <hr />
+
+            <h2 class="h4 mt-2 mb-3">What Can You Do?</h2>
+            <ul class="list-unstyled">
+                <li>✅ Add new tasks</li>
+                <li>📌 Mark tasks as complete</li>
+                <li>🗑️ Delete tasks you no longer need</li>
+            </ul>
+
+            <div class="mt-2">
+                <h3 class="mb-3">Example To-Do List</h3>
+                <ul class="list-unstyled">
+                    <li>☐ Finish coding the to-do app</li>
+                    <li>☑ Buy groceries</li>
+                    <li>☐ Call a friend</li>
+                </ul>
+            </div>
+        </div>
     </div>
 </div>
 
