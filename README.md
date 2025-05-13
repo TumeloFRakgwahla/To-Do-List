@@ -1,5 +1,16 @@
 # 📝 ASP.NET Core Razor To-Do List App
 
+## 📚 Table of Contents
+
+- [📝 Project Overview](#-aspnet-core-razor-to-do-list-app)
+- [🌟 Features](#-features)
+- [🚀 Technologies Used](#-technologies-used)
+- [💠 How to Run the Project](#-how-to-run-the-project)
+- [📁 Project Structure](#-project-structure)
+- [📌 Notes](#-notes)
+
+## 📝 Project Overview
+
 This is a simple and clean to-do list web application built with ASP.NET Core Razor Pages. It lets users add tasks, mark them as complete, delete individual tasks, and clear the entire list.
 
 ## 🌟 Features
