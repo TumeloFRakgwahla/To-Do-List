@@ -34,9 +34,9 @@ Include screenshots of:
 - Voter login
  ![Alt text](wwwroot/images/To-do%20Home%20Page.png)
 - Voter login
- ![Alt text](wwwroot/images/To-do%20List%20Page)
+ ![Alt text](wwwroot/images/To-do%20List%20Page.png)
 - Voter login
- ![Alt text](wwwroot/images/Privacy%20Page)
+ ![Alt text](wwwroot/images/Privacy%20Page.png)
 
 ## 💠 How to Run the Project
 
