@@ -28,6 +28,16 @@ This is a simple and clean to-do list web application built with ASP.NET Core Ra
 - Microsoft SQL Server Express
 - Bootstrap 5 for styling
 
+## 📸 Screenshots
+
+Include screenshots of:
+- Voter login
+ ![Alt text](wwwroot/images/To-do%20Home%20Page.png)
+- Voter login
+ ![Alt text](wwwroot/images/To-do%20List%20Page)
+- Voter login
+ ![Alt text](wwwroot/images/Privacy%20Page)
+
 ## 💠 How to Run the Project
 
 1. Clone or download this repository:
